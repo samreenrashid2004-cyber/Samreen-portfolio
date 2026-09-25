@@ -2095,7 +2095,8 @@ footer { padding: 0 7vw 40px; }
   .profile-frame { position: relative; z-index: 5; width: 360px; height: 430px; padding: 7px; border-radius: 38px; background: linear-gradient(135deg, var(--primary), var(--primary-2), var(--accent)); transform: rotate(-5deg); box-shadow: 0 30px 70px rgba(0,0,0,0.35), 0 0 55px rgba(139,92,246,0.35); transition: transform 0.5s ease; }
   .profile-frame::before { content: ''; position: absolute; inset: 3px; border-radius: 34px; background: var(--bg); z-index: -1; }
   .profile-frame:hover { transform: rotate(0deg) translateY(-10px); }
-  .profile-img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center top; border-radius: 32px; }
+  .profile-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 32px; background: linear-gradient(135deg, rgba(168,85,247,0.22), rgba(34,211,238,0.14), rgba(236,72,153,0.18)); border: 1px solid rgba(255,255,255,0.14); box-shadow: inset 0 0 30px rgba(255,255,255,0.08); }
+  .profile-placeholder span { font-size: clamp(78px, 10vw, 120px); font-weight: 800; letter-spacing: -8px; background: linear-gradient(135deg, var(--primary), var(--primary-2), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .image-orbit { position: absolute; border: 1px solid var(--primary); border-radius: 50%; opacity: 0.45; pointer-events: none; }
   .orbit-one { width: 450px; height: 450px; animation: orbitRotate 14s linear infinite; }
   .orbit-two { width: 490px; height: 300px; border-color: var(--accent); animation: orbitRotateReverse 18s linear infinite; }
